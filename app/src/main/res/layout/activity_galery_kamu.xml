@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaleryKamu"
+    android:background="@color/pink">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_close_galery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_white_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:civ_border_color="#FFF"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/ci_close_galery"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ci_close_galery"
+        android:layout_marginTop="210dp"
+        android:background="#999E9E9E"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:text="Harus ku akui, susah untuk melupakanmu, nay. Walau singkat tapi sangat mendalam nay. Maafkan aku yang harus menyayangimu."/>
+    </RelativeLayout>
+</RelativeLayout>
